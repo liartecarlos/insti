@@ -1,19 +1,19 @@
 
 public class YearUtilities {
 
-		public boolean isLeap(int year){
+		public static boolean isLeap(int year){
 	        if(year%4 == 0){
 	            if(year%100 == 0){
 	                if(year%400 == 0){
-	                    return false; 
+	                    return true; //modificacion de true a false
 	                }else{
-	                    return true;  
+	                    return false;  
 	                }
 	            }else{
 	                return false;
 	            }
 	        }else{
-	            return true;
+	            return false;//modificacion de false a true
 	        }
 	    }
 	
